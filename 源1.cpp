@@ -75,38 +75,57 @@
 //	}
 //	return 0;
 //}
-void Bubble_sort(int arr[10], int sz)
-{
-	int i = 0;
-	int b = 0;
-	for (b = 0; b < sz-1; b++)
-	{
-		for (i = 0; i < sz-b-1; i++)
-		{
-			if (arr[i]>arr[i + 1])
-			{
-				int tmp = arr[i];
-				arr[i] = arr[i + 1];
-				arr[i + 1] = tmp;
-			}
-		}
-	}
-
-}
+//void Bubble_sort(int arr[10], int sz)
+//{
+//	int i = 0;
+//	int b = 0;
+//	for (b = 0; b < sz-1; b++)
+//	{
+//		for (i = 0; i < sz-b-1; i++)
+//		{
+//			if (arr[i]>arr[i + 1])
+//			{
+//				int tmp = arr[i];
+//				arr[i] = arr[i + 1];
+//				arr[i + 1] = tmp;
+//			}
+//		}
+//	}
+//
+//}
+//int main()
+//{
+//	int a = 0;
+//	int arr[10] = { 0 };
+//	int c = 0;
+//	for (a = 0; a < 10; a++)
+//	{
+//		scanf("%d", &arr[a]);
+//	}
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	Bubble_sort(arr, sz);
+//	for (c = 0; c < 10; c++)
+//	{
+//		printf("%d ", arr[c]);
+//	}
+//	return 0;
+//}
 int main()
 {
 	int a = 0;
 	int arr[10] = { 0 };
-	int c = 0;
-	for (a = 0; a < 10; a++)
+	printf("请按从大到小的顺序输入九位整数\n");
+	for (a = 0; a < 9; a++)
 	{
 		scanf("%d", &arr[a]);
 	}
-	int sz = sizeof(arr) / sizeof(arr[0]);
-	Bubble_sort(arr, sz);
-	for (c = 0; c < 10; c++)
+	for (a = 0; a < 9; a++)
 	{
-		printf("%d ", arr[c]);
+		printf("%d ", arr[a]);
 	}
+	printf("请输入需要插入的数字\n");
+	scanf("%d", &a);
+	printf("输入的数为;%d\n", a);
+	
 	return 0;
 }
