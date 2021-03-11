@@ -1,7 +1,7 @@
-#define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
-#include<string.h>
-////
+//#define _CRT_SECURE_NO_WARNINGS
+//#include <stdio.h>
+//#include<string.h>
+//////
 //static  int hhh = 2020; //static把全局变量的作用域减小了，让这个变量只能在所在的源文件内部使用，除了源文件就不行了
 //
 //int Add(int x,int y)//加一个static会使函数无法在其他文件使用，只能在本文件使用，改变了函数的链接属性，使其失去了外部链接属性
@@ -110,22 +110,25 @@
 //	}
 //	return 0;
 //}
-int main()
-{
-	int a = 0;
-	int arr[10] = { 0 };
-	printf("请按从大到小的顺序输入九位整数\n");
-	for (a = 0; a < 9; a++)
-	{
-		scanf("%d", &arr[a]);
-	}
-	for (a = 0; a < 9; a++)
-	{
-		printf("%d ", arr[a]);
-	}
-	printf("请输入需要插入的数字\n");
-	scanf("%d", &a);
-	printf("输入的数为;%d\n", a);
-	
-	return 0;
-}
+
+
+//int main()
+//{
+//	int a = 0;
+//	int arr[10] = { 0 };
+//	printf("请按从大到小的顺序输入九位整数\n");
+//	for (a = 0; a < 9; a++)
+//	{
+//		scanf("%d", &arr[a]);
+//	}
+//	for (a = 0; a < 9; a++)
+//	{
+//		printf("%d ", arr[a]);
+//	}
+//	printf("请输入需要插入的数字\n");
+//	scanf("%d", &a);
+//	printf("输入的数为;%d\n", a);
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	Put_in(arr, sz, a);
+//	return 0;
+//}
